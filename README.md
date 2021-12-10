@@ -58,6 +58,8 @@ production:
   timeout: 5000
 ```
 
+From there you should be able to run `rake db:migrate` and `rake db:seed` for your shiny new postgres database.
+
 At this point you ought to set up your repo so that it can push to a production build on heroku. You'll find the steps here: [link](https://devcenter.heroku.com/articles/getting-started-with-ruby#deploy-the-app)
 
 In addition to those steps, run `heroku addons:create heroku-postgresql`
