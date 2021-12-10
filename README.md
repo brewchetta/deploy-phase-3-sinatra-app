@@ -4,25 +4,25 @@ This assumes you've developed your app fully and you expect to deploy your backe
 
 First, if you'd like to utilize postgresql in your local environment (you should) then install it via the command line. This can be done depending on the system but it'll either be:
 
+*Mac:*
 ```
-Mac
 brew install postgresql
 ```
 
-or 
-
+*Linux/WSL:*
 ```
-Linux/WSL
 sudo apt install postgresql
 ```
 
-In your gemfile, replace the `sqlite3` gem with the `pg` gem (`pg` stands for `postgres`)
+In your gemfile, delete the `sqlite3` gem and replace it with the `pg` gem (`pg` stands for `postgres`)
 
 ```
 gem 'pg'
 ```
 
-Run the bundle install to generate a new `Gemfile.lock`. Go into the lock file and look for a line that looks like this:
+Run the bundle install to generate a new `Gemfile.lock`. 
+
+*For Mac -* Go into the lock file and look for a line that looks like this:
 ```
 PLATFORMS
   x86_64-darwin-21
@@ -38,7 +38,7 @@ PLATFORMS
 
 WSL/Linux users may not need to make any changes.
 
-Next, change the `config/database.yml` file so that it uses postgres:
+Next, change the `config/database.yml` file so that it uses postgres. Comment out or delete the current text and replace it with this:
 
 ```
 development:
