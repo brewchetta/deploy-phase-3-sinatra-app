@@ -54,6 +54,9 @@ That's it!
 Once you've deployed your backend, you can now gather that endpoint from heroku and integrate it into your frontend like so: [link](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
 
 Resources:
+
 [https://devcenter.heroku.com/articles/sqlite3](https://devcenter.heroku.com/articles/sqlite3)
+
 [https://devcenter.heroku.com/articles/getting-started-with-ruby#deploy-the-app](https://devcenter.heroku.com/articles/getting-started-with-ruby#deploy-the-app)
+
 [https://devcenter.heroku.com/articles/rake](https://devcenter.heroku.com/articles/rake)
